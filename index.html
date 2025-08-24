@@ -366,11 +366,11 @@
                 audioContext = new (window.AudioContext || window.webkitAudioContext)();
             }
             
-            // if (isPlaying) {
-            //     musicBtn.textContent = '播放音乐';
-            //     isPlaying = false;
-            //     return;
-            // }
+            if (isPlaying) {
+                // musicBtn.textContent = '播放音乐';
+                isPlaying = false;
+                return;
+            }
             
             // musicBtn.textContent = '停止音乐';
             isPlaying = true;
@@ -482,6 +482,7 @@
 </body>
 
 </html>
+
 
 
 
